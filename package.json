@@ -33,8 +33,8 @@
     },
     "./*.css": {
       "import": "./dist/*.css",
-      "default": "./dist/*.css",
-      "style": "./dist/*.css"
+      "style": "./dist/*.css",
+      "default": "./dist/*.css"
     }
   },
   "style": "./dist/index.css",
