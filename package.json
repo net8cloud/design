@@ -2,6 +2,7 @@
   "name": "@net8cloud/design",
   "version": "0.0.1",
   "license": "MIT",
+  "private": false,
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && pnpm run prepack",
