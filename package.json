@@ -1,6 +1,6 @@
 {
   "name": "@net8cloud/design",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -30,6 +30,11 @@
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js",
       "style": "./dist/index.css"
+    },
+    "./*.css": {
+      "import": "./dist/*.css",
+      "default": "./dist/*.css",
+      "style": "./dist/*.css"
     }
   },
   "style": "./dist/index.css",
