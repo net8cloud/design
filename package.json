@@ -73,6 +73,10 @@
       "esbuild"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/net8cloud/design.git"
+  },
   "dependencies": {
     "@fontsource-variable/fira-code": "^5.2.7",
     "@fontsource-variable/inter": "^5.2.8",
