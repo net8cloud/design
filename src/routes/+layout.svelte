@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { Layout, type NavEntry, type NavigationProps, type NavSection } from '$lib/index.js';
+	import { Layout, type NavEntry, type NavigationProps } from '$lib/index.js';
 	import { House } from '@lucide/svelte';
-	import '$lib/index.css';
 
 	let { children } = $props();
 
