@@ -1,26 +1,34 @@
 <script lang="ts">
-	import { LayoutHelpers, Navigation, Footer, ContentFrame, favicon } from '$lib/index.js';
+	import {
+		LayoutHelpers,
+		Navigation,
+		Footer,
+		ContentFrame,
+		favicon as defaultFavicon,
+		type NavigationProps
+	} from '$lib/index.js';
 	import type { Snippet } from 'svelte';
 
-	let {
-		children = undefined,
-		footer = true,
-		navigation = true
-	}: {
+	export interface LayoutProps {
 		children?: Snippet;
 		footer?: boolean;
-		navigation?: boolean;
-	} = $props();
+		navigation?: NavigationProps;
+		favicon?: boolean;
+	}
+
+	let { children, footer = true, navigation, favicon = true }: LayoutProps = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	{#if favicon}
+		<link rel="icon" href={defaultFavicon} />
+	{/if}
 </svelte:head>
 
 <LayoutHelpers />
 
 {#if navigation}
-	<Navigation />
+	<Navigation {...navigation} />
 {/if}
 
 <ContentFrame {children} />

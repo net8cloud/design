@@ -1,0 +1,7 @@
+[
+	{
+		"label": "Run code",
+		"command": "pnpm dev",
+		"shell": "system"
+	}
+]
